@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    background-color: hsl(222, 26%, 31%);
+    padding: 0;
+    margin: 0;
+
+}
+
+.heading {
+    color: hsl(28, 16%, 65%);
+    font-size: 2rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+
+}
+
+.calci-grid {
+    display: grid;
+    justify-content: center;
+    min-height: 75vh;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calci-grid .btn {
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: 1.2px;
+    border-radius: 12px;
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 2px 4px hsl(28, 16%, 65%);
+    margin: 20% 5%;
+    font-weight: bold;
+    color: hsl(221, 14%, 31%);
+
+}
+
+.calci-grid .btn:hover {
+    background-color: bisque;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.main1 {
+    background-color: hsl(225, 21%, 49%);
+    border-radius: 12px;
+    margin: 20% 5%;
+    color: white;
+    cursor: pointer;
+    border: 1.2px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    box-shadow: 2px 4px hsl(224, 28%, 35%);
+}
+
+.main1:hover {
+    background-color: hsl(224, 28%, 35%);
+}
+
+.main2 {
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 12px;
+    margin: 10% 5%;
+    color: white;
+    cursor: pointer;
+    border: 1.2px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    box-shadow: 2px 4px hsl(6, 70%, 34%);
+}
+
+.main2:hover {
+    background-color: hsl(6, 70%, 34%);
+}
+
+.output {
+    grid-column: 1/-1;
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    /*to break numbers to fill up if it is large number*/
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .prev-op {
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.output .curr-op {
+    color: white;
+    font-size: 2.5rem;
+}
+
+/*Footer*/
+#footer {
+    text-align: center;
+
+}
+
+/* Mobile changes */
+
+@media only screen and (max-device-width: 500px) {
+
+    .calci-grid {
+        margin: 0 auto;
+    }
+}
