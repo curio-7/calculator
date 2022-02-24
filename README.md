@@ -1,2 +1,2 @@
 # calci
-A basic Calculator 
+A Simple Calculator (calci) made using JS 
